@@ -1,0 +1,6 @@
+FROM liferay/portal:7.0.6-ga7
+MAINTAINER Rafal Pydyniak <rafal@pydyniak.pl>
+
+COPY ./configs/portal-ext.properties $LIFERAY_HOME/
+COPY ./configs/*.config $LIFERAY_HOME/osgi/configs/
+COPY ./configs/*.jar $LIFERAY_HOME/osgi/portal/
