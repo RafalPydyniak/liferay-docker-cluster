@@ -58,9 +58,6 @@ services:
     ports:
       - '80:80'
     hostname: lb-haproxy.local
-    depends_on:
-      - liferay-portal-node-1
-      - liferay-portal-node-2
 volumes:
   lfr-dl-volume:
   esdata1:
